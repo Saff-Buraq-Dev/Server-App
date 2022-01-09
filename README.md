@@ -1,27 +1,28 @@
-# Serverapp
+# Server App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
-## Development server
+## Description
+Sur cette application vous pouvez enregistrer une liste de serveurs et voir leur statut.
+## Technologies utilisées
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Cette application a été conçue en utilisant les technologies suivantes:
 
-## Code scaffolding
+1. Backend:
+- SpringBoot
+- MySQL
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Frontend:
+- Angular
 
-## Build
+## Utilisation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Changez les informations de connexion à votre base de données `MySQL` [ici](Server-App-Backend/src/main/resources/application.yml).
+2. Démarrez l'application `Java` dans [Server-App-Backend](Server-App-Backend/src/main/java/com/example/server/ServerApplication.java).
+3. Allez dans le répertoire `Server-App-Frontend` et tapez dans le terminal:
+```sh
+npm install
+```
+Et puis démarrez le serveur angular pour commencer à utiliser l'application:
+```sh
+ng serve -o
+```
